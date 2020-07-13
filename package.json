@@ -1,0 +1,22 @@
+{
+	"name": "@encke/nk-mysql-builder",
+	"version": "1.0.0",
+	"description": "SQL String Builder Class to Extend NK-MySQL",
+	"main": "sql.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Encke/NK-MySQL-Builder.git"
+	},
+	"author": "Encke Technologies SRL",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Encke/NK-MySQL-Builder/issues"
+	},
+	"homepage": "https://github.com/Encke/NK-MySQL-Builder#readme",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
+}
