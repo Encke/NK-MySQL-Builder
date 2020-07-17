@@ -1,6 +1,6 @@
 {
 	"name": "@encke/nk-mysql-builder",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "SQL String Builder Class to Extend NK-MySQL",
 	"main": "sql.js",
 	"scripts": {

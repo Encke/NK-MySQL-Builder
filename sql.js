@@ -14,16 +14,16 @@ const sql = {
 	wrap: name => ( ( sql.type == 'mysql' )? ( '\`' + name + '\`' ): ( '[' + name + ']' ) ),
 	prepare: data => {
 		if( typeof( data ) == 'string' )  {
-			data = ( '\'' + replaceAll( '\'', '\'\'', data ) + '\'' )
+			data = replaceAll( '\'', '\'\'', data )
 		} else if( !isNaN( parseFloat( data ) ) ) {
 			data = parseFloat( data )
 		} else if( isDate( data ) ) {
 			let thisDate = new Date( data )
-			data = ( '\'' + thisDate.toISOString().replace( 'T', ' ' ).replace( 'Z', '' ) + '\'' )
+			data = thisDate.toISOString().replace( 'T', ' ' ).replace( 'Z', '' )
 		} else if( ( data === true ) || ( data === false ) )  {
 			data = ( ( data === true )? 1: 0 )
 		}
-		return data
+		return mysql.escape( data )
 	},
 	where: query => {
 		let querySQL = ''
