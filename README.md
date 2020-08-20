@@ -6,17 +6,17 @@ SQL String Builder Class to Extend NK-MySQL
 Install using NPM
 
 ```bash
-echo "registry=https://npm.pkg.github.com/Encke" >> .npmrc
-npm i @encke/nk-mysql-builder --save
+npm i /nk-mysql-builder --save
 ```
 
 ## How to use
 
 This will allow you to use Mongo like calls to MySQL Databases with no additional programming.
 
+---
 ### Include
 ```node
-const NKSQL = require( '@encke/nk-mysql-builder' )
+const NKSQL = require( 'nk-mysql-builder' )
 ```
 
 ### Get insert query (or queries)
